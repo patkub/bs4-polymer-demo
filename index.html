@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="Cache-Control" content="max-age=86400"/>
+  <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+  <title>BS4 Polymer Demo</title>
+  
+  <!--
+    If deploying to a non-root path, replace href="/" with the full path to the project root.
+    For example: href="/polymer-starter-kit/relative-path-example/"
+  -->
+  <base href="/">
+
+  <!-- Load webcomponents-lite.js to check and load any polyfills the browser needs -->
+  <script src="bower_components/webcomponentsjs/webcomponents-loader.js"></script>
+  
+  <!-- Bootstrap JS -->
+  <script defer src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+  <script defer src="node_modules/tether/dist/js/tether.min.js"></script>
+  <script defer src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script defer src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  
+  <!-- Bootstrap Core CSS -->
+  <link rel="stylesheet" href="node_modules/bs4-polymer/dist/bs4-core.min.css">
+  
+  <!-- Import BS4 Custom Elements -->
+  <link rel="import" href="elements.html">
+</head>
+
+<body>
+
+  <div class="container">
+    
+    <h1>Alerts</h1>
+    
+    <bs4-alert context="success">
+      This is a <strong>permenant</strong> alert—check it out!
+    </bs4-alert>
+    <bs4-alert context="primary" dismissible="true">
+      This is a <strong>primary</strong> alert—check it out!
+    </bs4-alert>
+    <bs4-alert context="secondary" dismissible="true">
+      This is a <strong>secondary</strong> alert—check it out!
+    </bs4-alert>
+    <bs4-alert context="success" dismissible="true">
+      This is a <strong>success</strong> alert—check it out!
+    </bs4-alert>
+    <bs4-alert context="danger" dismissible="true">
+      This is a <strong>danger</strong> alert—check it out!
+    </bs4-alert>
+    <bs4-alert context="warning" dismissible="true">
+      This is a <strong>warning</strong> alert—check it out!
+    </bs4-alert>
+    <bs4-alert context="info" dismissible="true">
+      This is a <strong>info</strong> alert—check it out!
+    </bs4-alert>
+    <bs4-alert context="light" dismissible="true">
+      This is a <strong>light</strong> alert—check it out!
+    </bs4-alert>
+    <bs4-alert context="dark" dismissible="true">
+      This is a <strong>dark</strong> alert—check it out!
+    </bs4-alert>
+    
+    <bs4-alert context="success">
+      <h4 class="alert-heading">Well done!</h4>
+      <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+      <hr>
+      <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+    </bs4-alert>
+    
+    <br>
+    <h1>Badge</h1>
+    
+    <bs4-badge context="primary" text="New"></bs4-badge>
+    <bs4-badge context="secondary" text="New"></bs4-badge>
+    <bs4-badge context="success" text="New"></bs4-badge>
+    <bs4-badge context="info" text="New"></bs4-badge>
+    <bs4-badge context="warning" text="New"></bs4-badge>
+    <bs4-badge context="danger" text="New"></bs4-badge>
+    
+    <h1>Example heading <bs4-badge context="secondary" text="New"></bs4-badge></h1>
+    
+    <bs4-badge context="primary" text="New" pill="true"></bs4-badge>
+    <bs4-badge context="secondary" text="New" pill="true"></bs4-badge>
+    <bs4-badge context="success" text="New" pill="true"></bs4-badge>
+    <bs4-badge context="info" text="New" pill="true"></bs4-badge>
+    <bs4-badge context="warning" text="New" pill="true"></bs4-badge>
+    <bs4-badge context="danger" text="New" pill="true"></bs4-badge>
+    
+    <br><br><br>
+    <h1>Jumbotron</h1>
+    
+    <bs4-jumbotron>
+      <h1 class="display-3">Hello, world!</h1>
+      <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+      <hr class="my-4">
+      <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+      <p class="lead">
+        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+      </p>
+    </bs4-jumbotron>
+    
+    <bs4-jumbotron fluid>
+      <div class="container">
+        <h1 class="display-3">Fluid jumbotron</h1>
+        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+      </div>
+    </bs4-jumbotron>
+    
+    <h1>Buttons</h1>
+    
+    <bs4-button text="Default" link="#"></bs4-button>
+    <bs4-button context="primary" text="Primary" link="#"></bs4-button>
+    <bs4-button context="secondary" text="Secondary" link="#"></bs4-button>
+    <bs4-button context="success" text="Success" link="#"></bs4-button>
+    <bs4-button context="danger" text="Danger" link="#"></bs4-button>
+    <bs4-button context="warning" text="Warning" link="#"></bs4-button>
+    <bs4-button context="info" text="Info" link="#"></bs4-button>
+    <bs4-button context="light" text="Light" link="#"></bs4-button>
+    <bs4-button context="dark" text="Dark" link="#"></bs4-button>
+    <bs4-button context="link" text="Link" link="#"></bs4-button>
+    
+    <br><br>
+    
+    <bs4-button outline="true" text="Default" link="#"></bs4-button>
+    <bs4-button context="primary" outline="true" text="Primary" link="#"></bs4-button>
+    <bs4-button context="secondary" outline="true" text="Secondary" link="#"></bs4-button>
+    <bs4-button context="success" outline="true" text="Success" link="#"></bs4-button>
+    <bs4-button context="danger" outline="true" text="Danger" link="#"></bs4-button>
+    <bs4-button context="warning" outline="true" text="Warning" link="#"></bs4-button>
+    <bs4-button context="info" outline="true" text="Info" link="#"></bs4-button>
+    <bs4-button context="light" outline="true" text="Light" link="#"></bs4-button>
+    <bs4-button context="dark" outline="true" text="Dark" link="#"></bs4-button>
+    <bs4-button context="link" outline="true" text="Link" link="#"></bs4-button>
+    
+    <br><br>
+    
+    <bs4-button context="default" disabled="true" text="Default" link="#"></bs4-button>
+    <bs4-button context="primary" disabled="true" text="Primary" link="#"></bs4-button>
+    <bs4-button context="secondary" disabled="true" text="Secondary" link="#"></bs4-button>
+    <bs4-button context="success" disabled="true" text="Success" link="#"></bs4-button>
+    <bs4-button context="danger" disabled="true" text="Danger" link="#"></bs4-button>
+    <bs4-button context="warning" disabled="true" text="Warning" link="#"></bs4-button>
+    <bs4-button context="info" disabled="true" text="Info" link="#"></bs4-button>
+    <bs4-button context="light" disabled="true" text="Light" link="#"></bs4-button>
+    <bs4-button context="dark" disabled="true" text="Dark" link="#"></bs4-button>
+    <bs4-button context="link" disabled="true" text="Link" link="#"></bs4-button>
+    
+    <br><br>
+    
+    <bs4-button context="default" active="true" text="Default" link="#"></bs4-button>
+    <bs4-button context="primary" active="true" text="Primary" link="#"></bs4-button>
+    <bs4-button context="secondary" active="true" text="Secondary" link="#"></bs4-button>
+    <bs4-button context="success" active="true" text="Success" link="#"></bs4-button>
+    <bs4-button context="danger" active="true" text="Danger" link="#"></bs4-button>
+    <bs4-button context="warning" active="true" text="Warning" link="#"></bs4-button>
+    <bs4-button context="info" active="true" text="Info" link="#"></bs4-button>
+    <bs4-button context="light" active="true" text="Light" link="#"></bs4-button>
+    <bs4-button context="dark" active="true" text="Dark" link="#"></bs4-button>
+    <bs4-button context="link" active="true" text="Link" link="#"></bs4-button>
+    
+    <br><br>
+    
+    <bs4-button context="primary" block="true" text="Block Level" link="#"></bs4-button>
+    <bs4-button context="secondary" block="true" text="Block Level" link="#"></bs4-button>
+    
+    <br>
+    
+    <bs4-button text="Large" link="#" size="lg"></bs4-button>
+    <bs4-button text="Small" link="#" size="sm"></bs4-button>
+    
+    <br><br>
+    <h1>List Group</h1>
+    
+    <bs4-list-group items='[
+        {"text": "Item 1"},
+        {"text": "Item 2", "active": "true"},
+        {"text": "Item 3", "context": "primary"},
+        {"text": "Item 4", "context": "secondary"},
+        {"text": "Item 5", "context": "success"},
+        {"text": "Item 6", "context": "danger"},
+        {"text": "Item 7", "context": "warning"},
+        {"text": "Item 8", "context": "info"},
+        {"text": "Item 9", "context": "light"},
+        {"text": "Item 10", "context": "dark"}]'></bs4-list-group>
+    
+    <br>
+    <h1>Breadcrumb</h1>
+    
+    <bs4-breadcrumb items='[
+        {"text": "Home", "link": "#", "active": false},
+        {"text": "Library", "link": "#", "active": false},
+        {"text": "Data", "link": "#", "active": false},
+        {"text": "Bootstrap", "link": "#", "active": true}]'></bs4-breadcrumb>
+    
+    <br><br>
+    
+  </div>
+  
+</body>
+</html>

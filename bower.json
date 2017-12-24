@@ -1,0 +1,20 @@
+{
+  "name": "bs4-polymer-demo",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Patrick Kubiak <patrick@antuple.net>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/patkub/bs4-polymer-demo",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "^2.3.1"
+  }
+}

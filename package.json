@@ -1,0 +1,13 @@
+{
+  "name": "bs4-polymer-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:patkub/bs4-polymer-demo.git",
+  "author": "Patrick Kubiak <patrick@antuple.net>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "4.0.0-beta.2",
+    "bs4-polymer": "0.6.0"
+  }
+}
