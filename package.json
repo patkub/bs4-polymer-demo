@@ -8,6 +8,6 @@
   "private": true,
   "dependencies": {
     "bootstrap": "4.0.0-beta.2",
-    "bs4-polymer": "0.6.0"
+    "bs4-polymer": "0.11.0"
   }
 }
